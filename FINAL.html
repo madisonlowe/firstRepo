@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOPEPUNK 2.0</title>
+    <style>
+      a {
+        text-decoration: none;
+        color: #1e0a0a;
+        transition: all 0.3s ease-in-out;
+      }
+      a:hover {
+        color: #fc7b01;
+      }
+      body {
+        background: linear-gradient(120deg, #fdfbfb 0%, #f9f9f9 100%);
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        border-radius: 25px;
+        padding: 10px 20px;
+        border: 1px solid #fda24c;
+        background: #fda24c;
+        color: white;
+        transition: all 0.3s ease-in-out;
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: 0px 1px 2px rgba(19, 30, 37, 0.1);
+      }
+      button:hover {
+        border: 1px solid #fc7b01;
+        background: #fc7b01;
+      }
+      h2 {
+        color: #1e0a0a;
+      }
+      hr {
+        width: 50%;
+        visibility: hidden;
+      }
+      .containerone {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid;
+        padding: 00px 50px 0px 50px;
+        width: 500px;
+        background: radial-gradient(
+          circle at -8.9% 51.2%,
+          rgb(250, 150, 25) 0%,
+          rgb(250, 150, 25) 15.9%,
+          rgb(250, 175, 35) 15.9%,
+          rgb(250, 175, 35) 24.4%,
+          rgb(70, 35, 10) 24.5%,
+          rgb(70, 35, 10) 66%
+        );
+        color: #ffffff;
+        font-size: 45px;
+        line-height: 10%;
+        text-align: center;
+      }
+      .containertwo {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #ffffff;
+        padding: 20px 50px;
+        width: 500px;
+        background: #ffffff;
+      }
+      .credit {
+        text-align: center;
+        color: rgba(30, 10, 10, 0.1);
+        font-size: 8px;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 1px;
+      }
+      .footerpic {
+        display: block;
+        margin: 0 auto;
+        padding: 0px 50px;
+        width: 600px;
+        height: 70px;
+        object-fit: cover;
+      }
+      .highlight {
+        font-weight: bold;
+        font-size: 14px;
+      }
+      .text {
+        line-height: 200%;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #1e0a0a;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="containerone">
+      <h1>
+        <em><strong>HOPEPUNK</strong></em>
+      </h1>
+    </div>
+    <div class="containertwo">
+      <div class="text">
+        <h2><strong>NOUN.</strong><br /><em>(həʊpˌpʌŋk)</em></h2>
+        <p>
+          "Stories in the
+          <span class="highlight"
+            ><a href="https://en.wikipedia.org/wiki/Hopepunk">hopepunk</a></span
+          >
+          subgenre reject the fatalism and cynicism of <em>grimdark</em> [...]
+          Hopepunk characters persevere, believing in the possibility of
+          something better in the face of difficult realities. [...] A hopepunk
+          narrative is driven by fierce caring and the will to fight for
+          something. The worlds described in hopepunk works are not utopian or
+          even necessarily hopeful; the genre is expressed in the ways
+          characters approach issues."
+        </p>
+        <p>
+          One related concept is
+          <span class="highlight"
+            ><a href="https://en.wikipedia.org/wiki/Solarpunk"
+              >solarpunk</a
+            ></span
+          >, which "envisions how the future might look if humanity succeeded in
+          solving major contemporary challenges with an emphasis on
+          sustainability, climate change and pollution [...] where technology
+          enables humanity to sustainably co-exist with its environment."
+        </p>
+        <hr />
+        <button>. . .</button>
+      </div>
+    </div>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/027/526/original/van_gogh_sun_1.jpg?1645265462"
+      alt="Van Gogh's Sunflowers"
+      class="footerpic"
+    />
+    <br />
+    <div class="credit">Coded by Madison</div>
+    <script>
+      function quoteGen() {
+        let answer = prompt(
+          "Want to learn more about hopepunk, solarpunk, or neither?"
+        );
+        answer = answer.toLowerCase();
+        answer = answer.trim();
+
+        if (answer === "hopepunk") {
+          alert(
+            `There are some cool essays online about the possibilities and limitations of hopepunk, whether as a literary genre or a philosophical concept!`
+          );
+        } else if (answer === "solarpunk") {
+          alert(
+            `Try reading about regenerative design or one of the Solarpunk Manifestos for more information!`
+          );
+        } else if (answer === "neither") {
+          alert(`Fair enough!`);
+        }
+      }
+
+      let applyNowButton = document.querySelector("button");
+      applyNowButton.addEventListener("click", quoteGen);
+    </script>
+  </body>
+</html>

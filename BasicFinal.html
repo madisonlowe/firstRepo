@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOPEPUNK</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        width: 650px;
+        padding: 50px 0px 0px 0px;
+      }
+      .hovertext {
+        position: absolute;
+        width: 320px;
+        padding: 40px;
+        line-height: 150%;
+        opacity: 0;
+        text-align: justify;
+        transition: 1s ease-in-out;
+      }
+      .hoverimage {
+        position: relative;
+        flex: 3;
+        transition: 1s ease-in-out;
+      }
+      .titleblock {
+        flex: 1;
+        margin: auto auto;
+        text-align: center;
+      }
+      .hoverimage:hover .coverpage {
+        opacity: 0;
+        transition: 1s ease-in-out;
+      }
+      .hoverimage:hover .hovertext {
+        opacity: 1;
+        transition: 1s ease-in-out;
+      }
+      .coverpage {
+        position: absolute;
+        transition: 1s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="hoverimage">
+        <img
+          src="https://i.pinimg.com/564x/35/90/85/3590859f6bc30efe326d8f4009248b2f.jpg"
+          alt="Painting by Sophie Margolin"
+          class="coverpage"
+          width="400px"/>
+        <div class="hovertext">
+          <p>Stories in the <strong>hopepunk</strong> subgenre reject the fatalism and cynicism of <em>grimdark</em> which presumes people are inherently bad. Hopepunk characters persevere, believing in the possibility of something better in the face of difficult realities. [...] A hopepunk narrative is driven by fierce caring and the <strong>will to fight</strong> for something. The worlds described in hopepunk works are not utopian or even necessarily hopeful; the genre is expressed in the ways characters approach issues. <p>One related genre is <strong>solarpunk</strong>, which "envisions how the future might look if humanity succeeded in solving major contemporary challenges with an emphasis on sustainability, climate change and pollution."
+            <p><a href="https://en.wikipedia.org/wiki/Hopepunk">(Source).</a></p>
+            <button><a href="https://www.goodreads.com/genres/hopepunk">Hopepunk Book Recs</a></button></p>
+        </div>
+      </div>
+      <div class="titleblock">
+        <h1>HOPEPUNK</h1>
+        <h2>NOUN.<br />(həʊpˌpʌŋk)</h2>
+        <hr />
+        <p>Artist credit to<br /><a href="https://wildparsnip.tumblr.com/post/165604305167/these-are-some-sketches-i-made-for-the-film">Sophie Margolin.</a></p>
+      </div>
+    </div>
+    <script></script>
+  </body>
+</html>
