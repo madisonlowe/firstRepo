@@ -1,1 +1,11 @@
 This is an edit made to practice branch push/pull on Git. New plans for the first upgrade of these portfolio pages will be inserted here in this paragraph.
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- head definitions go here -->
+    </head>
+    <body>
+        <!-- the content goes here -->
+    </body>
+</html>
